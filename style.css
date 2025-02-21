@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+* {
+    --cor-primaria: #2B2D42;
+    /* Azul escuro */
+    --cor-secundaria: #F8F9FA;
+    /* Azul claro */
+    --cor-destaque: #3A506B;
+    /* Vermelho */
+    --cor-fundo: #D4AF37;
+    /* Cinza claro */
+    --cor-texto: #E5E5E5;
+    /* Cinza escuro */
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    /*LETRAS MAISCULA*/
+    transition: 0.2s linear;
+    font-family: 'Roboto', 'sans-serif';
+
+}
+
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    /*ocutar qualquer elemento que passa da tela (horizontal)*/
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    background: var(--cor-destaque);
+    /*Define o fundo da página com a variável --bg.*/
+}
+
+
+
+.header-page {
+    background: var(--cor-primaria);
+    /* Fundo igual ao corpo */
+    display: flex;
+
+    /* Usa flexbox para alinhar itens */
+    align-items: center;
+    /* Alinha verticalmente os itens ao centro */
+    justify-content: space-between;
+    /* Espaça itens igualmente */
+    padding: 1.5rem 7%;
+    /* Adiciona espaçamento interno */
+    border-bottom: var(--cor-texto);
+    /* Adiciona borda inferior */
+    position: fixed;
+    /* Fixa no topo da tela */
+    top: 0;
+    /* Define a posição inicial no topo */
+    left: 0;
+    /* Posiciona à esquerda */
+    right: 0;
+    /* Preenche até a direita */
+    z-index: 999;
+    /* Eleva o cabeçalho acima de outros elementos */
+}
